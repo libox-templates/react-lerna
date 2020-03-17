@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import Component from "package-b";
+import Component from "<%= name %>-b";
 
 const BasisB: FC = () => (
   <Component />

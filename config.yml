@@ -7,11 +7,11 @@ ejsFiles:
 
   - packages/package-a/package.json
   - packages/package-a/README.md
-  - packages/package-a/index.ts
-  - packages/package-a/themes/default/variables.less
-  - packages/package-a/constants/index.ts
-  - - packages/package-a/components/YourComponent.tsx
-    - packages/package-a/components/<%= componentName %>.tsx
+  - packages/package-a/src/index.ts
+  - packages/package-a/src/themes/default/variables.less
+  - packages/package-a/src/constants/index.ts
+  - - packages/package-a/src/components/YourComponent.tsx
+    - packages/package-a/src/components/<%= componentName %>.tsx
 
   - packages/package-b/package.json
   - packages/package-b/README.md

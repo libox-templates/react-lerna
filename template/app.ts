@@ -1,1 +1,1 @@
-import "./src/themes/index.less";
+import "./packages/package-a/src/themes/index.less";
