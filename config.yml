@@ -1,0 +1,42 @@
+ejsFiles:
+  - package.json
+  - .umirc.ts
+  - LICENSE
+  - README.md
+  - README_EN.md
+
+  - packages/package-a/package.json
+  - packages/package-a/README.md
+  - packages/package-a/index.ts
+  - packages/package-a/themes/default/variables.less
+  - packages/package-a/constants/index.ts
+  - - packages/package-a/components/YourComponent.tsx
+    - packages/package-a/components/<%= componentName %>.tsx
+
+  - packages/package-b/package.json
+  - packages/package-b/README.md
+
+  - docs/index.md
+  - docs/usage/package-a.md
+  - docs/usage/package-b.md
+
+  - examples/BasisA.tsx
+  - examples/BasisB.tsx
+prompts:
+  - name: name
+    type: input
+    message: 项目名
+    default: "{{basename}}"
+  - name: componentName
+    type: input
+    message: 组件名称
+    default: "{{name | pascal}}"
+  - name: description
+    type: input
+    message: 描述
+    default: "{{componentName}} 组件。"
+  - name: author
+    type: input
+    message: 作者
+    format: authorSplit
+    default: "{{defaultUser | authorJoin}}"
