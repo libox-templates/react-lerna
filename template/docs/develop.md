@@ -53,6 +53,13 @@ $ npm run build
 ### Release
 
 ```bash
-# lerna publish
+# https://github.com/lerna/lerna/blob/d93510847a7ee37c56b196c0a5f32c746319b542/commands/version/README.md#--conventional-commits
 $ npm run release
+```
+
+### Pre-Release
+
+```bash
+# https://github.com/lerna/lerna/blob/d93510847a7ee37c56b196c0a5f32c746319b542/commands/version/README.md#--conventional-prerelease
+$ npm run release -- --conventional-prerelease
 ```
